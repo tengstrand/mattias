@@ -1,0 +1,91 @@
+
+html, body {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px; 
+    text-align: center;
+}
+
+.header .title {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.header .description {
+    margin-top: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.image-list {
+    max-width: 1000px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.image-list .separator {
+    width: 200px;
+    height: 1px;
+    background-color: #888888; 
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.image-list .image-box {
+    margin-bottom: 40px;
+}
+
+.image-list .image-box .image {
+    
+}
+
+.image-list .image-box .image img {
+    width: 100%;
+}
+
+.image-list .image-box .title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media (max-width:768px) {
+    .header .title {
+        font-size: 28px;
+    }
+
+    .header .description {
+        margin-top: 14px;
+    }
+
+    .header {
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px; 
+    }
+
+    .image-list {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .image-list .separator {
+        margin-bottom: 20px;
+    }
+
+    .image-list .image-box {
+        margin-bottom: 20px;
+    }
+}
