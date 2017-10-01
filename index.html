@@ -6,13 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <title>Mattias Tengstrand</title>
+	
+	<style>
+	
+	body {
+	font-family: 'Montserrat', sans-serif;
+	margin-left:%
+	}
+	
+	ul {    
+	list-style-type: none;
+    margin:0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+	}
+	
+	li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	}
+
+	li a:hover {
+    background-color: #555;
+    color: white;
+	}
+
+	</style>
+	
 </head>
 
-<body>
+<body >
+
+<ul>
+  <li><a href="#cow">Cow</a></li>
+  <li><a href="#horse">Horse</a></li>
+  <li><a href="#sheep">Sheep</a></li>
+</ul>
+
     <div class="header">
         <div class="title">
             Mattias Tengstrand
@@ -23,18 +63,40 @@
     </div>
     <div class="container">
         <div class="image-list">
+		
             <div class="image-box">
-                <div class="image">
-                    <a href="img/0f5f39_5b7327f271874da0a2aaad7132dfd94f-mv2_d_2303_3457_s_2.jpg">
-                        <img src="img/cow.jpg" />
+                <div id="cow" class="image">
+                    <a target="_blank" href="https://media.mnn.com/assets/images/2017/01/cow-in-pasture.jpg.838x0_q80.jpg">
+                        <img src="https://media.mnn.com/assets/images/2017/01/cow-in-pasture.jpg.838x0_q80.jpg" />
                     </a>
                 </div>
                 <div class="title">
-                    Random Title
+                    Cow
+                </div>
+            </div>
+					
+            <div class="image-box">
+                <div id="horse" class="image">
+                    <a target="_blank" href="http://www.horsechannel.com/images/horse-news-article-images/chestnut-horse-autumn_1000.jpg">
+                        <img src="http://www.horsechannel.com/images/horse-news-article-images/chestnut-horse-autumn_1000.jpg" />
+                    </a>
+                </div>
+                <div class="title">
+                    Horse
                 </div>
             </div>
 
-            <div class="separator"></div>
+            <div class="image-box">
+                <div id="sheep" class="image">
+                    <a target="_blank" href="https://vignette.wikia.nocookie.net/parody/images/b/ba/Sheep.jpg/revision/latest?cb=20151126182949">
+                        <img src="https://vignette.wikia.nocookie.net/parody/images/b/ba/Sheep.jpg/revision/latest?cb=20151126182949" />
+                    </a>
+                </div>
+                <div class="title">
+                    Sheep
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
